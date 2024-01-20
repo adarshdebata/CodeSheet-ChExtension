@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="cheatSheet">
+        <label for="language">Select a language:</label>
+        <select id="language" name="language">
+            <option value="select" selected>--Select--</option>
+            <option value="html">HTML</option>
+            <option value="cpp">C++</option>
+            <option value="csharp">C#</option> 
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+        </select>
+
+        <label for="codeSnippet">Select a code snippet:</label>
+        <select id="codeSnippet" name="codeSnippet">
+            <option value="select">--Select--</option>
+        </select>
+
+        <button id="submitButton">Generate</button>
+
+        <div id="generatedCode" class="hidden">
+            <pre id="codeDisplay"></pre>
+            <button id="copyButton">Copy</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
