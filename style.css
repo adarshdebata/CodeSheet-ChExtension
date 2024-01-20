@@ -1,0 +1,68 @@
+#cheatSheet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    min-width: 400px; /* Set a minimum width for the extension */
+    max-height: 400px; /* Set a minimum height for the extension */
+    overflow-x: auto;
+    overflow-y: auto;
+}
+label, select, button {
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: fit-content;
+    height: fit-content; 
+    resize: horizontal;
+}
+.switch {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+#submitButton {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+#submitButton:hover {
+    background-color: darkgreen;
+    transform: scale(1.1);
+}
+
+#submitButton:active {
+    background-color: grey;
+    color: black;
+}
+
+#copyButton {
+    background-color: blue;
+    color: white;
+    padding: 4px; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#copyButton:hover {
+    background-color: darkblue;
+    transform: scale(1.1);
+}
+
+#copyButton:active {
+    background-color: grey;
+}
+
+.hidden {
+    display: none;
+}
