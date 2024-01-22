@@ -1,5 +1,3 @@
-// snippets/cpp.js
-
 export function generateCode(codeSnippet) {
     switch (codeSnippet) {
         case 'boilerplate':
