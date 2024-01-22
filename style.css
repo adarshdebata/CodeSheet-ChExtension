@@ -72,16 +72,6 @@ textarea {
     background-color: grey;
 }
 
-@media only screen and (max-width: 600px) {
-    #cheatSheet {
-        padding: 10px;
-    }
-
-    textarea {
-        height: 150px; 
-    }
-}
-
 .hidden {
     display: none;
 }
