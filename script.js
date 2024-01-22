@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         cpp: './snippets/cpp.js',
         csharp: './snippets/csharp.js',
         python: './snippets/python.js'
-        // Add more languages as needed
+       
     };
 
     submitButton.addEventListener('click', async function () {
@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
             try {
                 // Dynamically import the snippet file based on the selected language
                 const snippetModule = await import(snippetFile);
-                // Use the appropriate function from the imported module
                 return snippetModule.generateCode(codeSnippet);
             } catch (error) {
                 console.error('Error importing or executing snippet file:', error);
@@ -63,7 +62,6 @@ document.addEventListener('DOMContentLoaded', function () {
         // Clear existing options
         codeSnippetSelect.innerHTML = '';
 
-        // Add new options based on the selected language
         const codeSnippetsForLanguage = getCodeSnippetsForLanguage(selectedLanguage);
         codeSnippetsForLanguage.forEach(snippet => {
             const option = document.createElement('option');
@@ -74,7 +72,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function getCodeSnippetsForLanguage(language) {
-        // Define the code snippets for each language
         const codeSnippets = {
             html: ['boilerplate', 'anchorTag', 'marqueeTag', 'orderList', 'table', 'unorderedList'],
             java: ['boilerplate', 'breadthFirstSearch(BFS)', 'bubbleSort', 'depthFirstSearch(DFS)', 'dijkstraAlgorithm', 'insertionSort', 'mergeSort', 'quickSort'],
