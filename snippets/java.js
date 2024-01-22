@@ -132,7 +132,8 @@ export function generateCode(codeSnippet) {
                 '\n' +
                 '    public static void main(String[] args) {\n' +
                 '        DijkstraAlgorithm dijkstraAlgorithm = new DijkstraAlgorithm();\n' +
-                '        int graph[][] = new int[][]{{0, 2, 0, 6, 0}, {2, 0, 3, 8, 5}, {0, 3, 0, 0, 7}, {6, 8, 0, 0, 9}, {0, 5, 7, 9, 0}};\n' +
+                '        int graph[][] = new int[][]{{0, 2, 0, 6, 0}, {2, 0, 3, 8, 5}, \n' +         
+                '        {0, 3, 0, 0, 7}, {6, 8, 0, 0, 9}, {0, 5, 7, 9, 0}};\n' +
                 '        dijkstraAlgorithm.dijkstra(graph, 0);\n' +
                 '    }\n' +
                 '}';
@@ -207,7 +208,7 @@ export function generateCode(codeSnippet) {
                 '        g.addEdge(2, 3);\n' +
                 '        g.addEdge(3, 3);\n' +
                 '\n' +
-                '        System.out.println("Breadth First Traversal (starting from vertex 2):");\n' +
+                '       System.out.println("Breadth First Traversal(starting from vertex 2):");\n' +
                 '        g.BFS(2);\n' +
                 '    }\n' +
                 '}';
